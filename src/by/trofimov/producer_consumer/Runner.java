@@ -10,8 +10,8 @@ public class Runner {
         final Producer producer = new Producer(market);
         final Consumer consumer = new Consumer(market);
 
-        Thread producerThread = new Thread(producer);
-        Thread counsumerThread = new Thread(consumer);
+        final Thread producerThread = new Thread(producer);
+        final Thread counsumerThread = new Thread(consumer);
         producerThread.start();
         counsumerThread.start();
 
